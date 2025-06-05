@@ -82,15 +82,26 @@
       ">Add to Cart</button>
     </div>
 
-    <!-- Muscle Salve Card -->
-    <div class="product">
-      <img src="Topicals - MuscleSalve.jpeg" alt="Muscle Salve" />
-      <h3>Muscle Salve</h3>
-      <p>Our potent healing salve is infused with full-spectrum cannabis to relieve pain, reduce inflammation, and nourish the skin.</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
+   <!-- Muscle Salve Card -->
+<div class="product">
+  <img src="Topicals - MuscleSalve.jpeg" alt="Muscle Salve" />
+  <h3>Muscle Salve</h3>
+  <p>Our potent healing salve is infused with full-spectrum cannabis to relieve pain, reduce inflammation, and nourish the skin.</p>
+  <label for="salveSize">Choose size:</label>
+  <select id="salveSize">
+    <option value="Small" data-price="40">Small - $40</option>
+    <option value="Large" data-price="70">Large - $70</option>
+  </select>
+  <br>
+  <button onclick="
+    addToCart(
+      'Muscle Salve',
+      document.getElementById('salveSize').value,
+      parseFloat(document.getElementById('salveSize').selectedOptions[0].dataset.price)
+    )
+  ">Add to Cart</button>
+</div>
 
-  </div>
 
   <script src="cart.js"></script>
 </body>
