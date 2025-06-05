@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <header>
+  <div class="logo">
+    <a href="index.html"><img src="weedo-logo.png" alt="Wellness By Weedo Logo" /></a>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+  </nav>
+</header>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apparel | Wellness By Weedo</title>
@@ -61,20 +74,6 @@
       bottom: 0;
       width: 100%;
     }
-    .add-to-cart-btn {
-  background-color: #a1e3a1;
-  color: #1a3d2f;
-  padding: 0.75rem 2rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-.add-to-cart-btn:hover {
-  background-color: #81cf81;
-}
-
   </style>
 </head>
 
@@ -122,7 +121,6 @@
       </select>
       <br>
       <button class="add-to-cart-btn">Add to Cart</button>
-
     </div>
 
   </section>
