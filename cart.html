@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | Wellness By Weedo</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; background-color: #1a3d2f; color: #f0f0e5; }
+    header { background-color: #2e5939; padding: 2rem; text-align: center; }
+    nav a { color: #f0f0e5; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    section { padding: 2rem; }
+    table { width: 100%; max-width: 800px; margin: auto; border-collapse: collapse; }
+    th, td { border: 1px solid #f0f0e5; padding: 0.5rem; text-align: center; }
+    th { background-color: #2e5939; }
+    td { background-color: #3a6b4e; }
+    .total { font-weight: bold; }
+    footer { text-align: center; padding: 1rem; background-color: #2e5939; color: #f0f0e5; position: relative; bottom: 0; width: 100%; }
+    button { padding: 0.5rem 1rem; border: none; border-radius: 8px; background-color: #f0f0e5; color: #1a3d2f; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="weedo-logo.png" alt="Logo" style="height: 80px; filter: drop-shadow(0 0 30px #b5f7c3);"></a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+  <section>
+    <h2>Your Shopping Cart</h2>
+    <table id="cart-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Variant</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" class="total">Total:</td>
+          <td colspan="2" class="total" id="cart-total">$0.00</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+  
+  <script src="cart.js"></script>
+
+  
+
+  
+<footer style="margin-top: 4rem; padding: 2rem; background-color: #2e5939; color: white; text-align: center;">
+    <p><strong>Wellness By Weedo</strong> - Natural Healing, Elevated Living.</p>
+    <nav style="margin: 0.5rem 0;">
+      <a href="index.html" style="color: #b8e8c6;">Home</a> |
+      <a href="shop.html" style="color: #b8e8c6;">Shop</a> |
+      <a href="about.html" style="color: #b8e8c6;">About</a> |
+      <a href="contact.html" style="color: #b8e8c6;">Contact</a>
+    </nav>
+    <p style="margin: 0.5rem 0;">&copy; 2025 Wellness By Weedo. All rights reserved.</p>
+    <p>Email: <a href="mailto:info@wellnessbyweedo.com" style="color: #b8e8c6;">info@wellnessbyweedo.com</a></p>
+  </footer></body>
+</html>
+
+

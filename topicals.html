@@ -1,0 +1,76 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topicals | Wellness By Weedo</title>
+<style>
+body { margin: 0; font-family: sans-serif; background-color: #1a3d2f; color: #f0f0e5; }
+header { background-color: #2e5939; padding: 2rem; text-align: center; }
+.logo img { height: 80px; filter: drop-shadow(0 0 30px #b5f7c3); }
+nav a { color: #f0f0e5; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+section { padding: 2rem; text-align: center; }
+.product { background-color: #2e5939; border-radius: 12px; padding: 2rem; max-width: 600px; margin: 2rem auto; }
+.product img { width: 100%; border-radius: 10px; max-width: 400px; }
+select, button { margin-top: 1rem; padding: 0.5rem 1rem; border-radius: 8px; border: none; font-size: 1rem; }
+button { background-color: #b5f7c3; color: #1a3d2f; font-weight: bold; cursor: pointer; }
+footer { background-color: #2e5939; text-align: center; padding: 1rem; font-size: 0.9rem; color: #ccc; }
+</style></head><body>
+<header><div class="logo"><img src="weedo-logo.png" alt="Logo"></div>
+<nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav></header>
+
+<section>
+  <h1>Topicals</h1>
+
+  <div class="product">
+    <img src="Topical- bathBomb.jpeg" alt="Bath Bombs">
+    <h3>Infused Bath Bombs</h3>
+    <p>Drop into warm water and let the calming, cannabinoid-rich blend melt away stress, muscle tension, and aches.</p>
+    <label for="bath-bomb-size">Choose size:</label>
+    <select id="bath-bomb-size" name="bath-bomb-size">
+      <option value="small">Small - $5</option>
+      <option value="large">Large - $8</option>
+    </select>
+    <br>
+    <button class="add-to-cart-btn">Add to Cart</button>
+  </div>
+
+      <div class="product">
+        <img src="Topicals - MuscleSalve.jpeg" alt="Muscle Salve">
+        <h3>Muscle Salve</h3>
+        <p>Our signature infused salve is perfect for muscle aches and tension relief. 
+        Comes in a 2.65 oz easy-to-apply roll-on stick.</p>
+        <label for="muscle-salve-price">Price:</label>
+        <select id="muscle-salve-price" name="muscle-salve-price">
+          <option value="muscle-salve-40">$40 – 2.65 oz Roll-On</option>
+        </select>
+        <br>
+       <button class="add-to-cart-btn">Add to Cart</button>
+
+      </div>
+
+</section>
+
+
+  <script src="cart.js"></script>
+
+  
+
+  
+<footer style="margin-top: 4rem; padding: 2rem; background-color: #2e5939; color: white; text-align: center;">
+    <p><strong>Wellness By Weedo</strong> - Natural Healing, Elevated Living.</p>
+    <nav style="margin: 0.5rem 0;">
+      <a href="index.html" style="color: #b8e8c6;">Home</a> |
+      <a href="shop.html" style="color: #b8e8c6;">Shop</a> |
+      <a href="about.html" style="color: #b8e8c6;">About</a> |
+      <a href="contact.html" style="color: #b8e8c6;">Contact</a>
+    </nav>
+    <p style="margin: 0.5rem 0;">&copy; 2025 Wellness By Weedo. All rights reserved.</p>
+    <p>Email: <a href="mailto:info@wellnessbyweedo.com" style="color: #b8e8c6;">info@wellnessbyweedo.com</a></p>
+  </footer></body>
+</html>
+
+
