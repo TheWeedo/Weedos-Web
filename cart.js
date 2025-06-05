@@ -68,21 +68,27 @@ function removeFromCart(index) {
 
 document.addEventListener('DOMContentLoaded', () => {
   updateCartCount();
-  // Handle Add to Cart button on product pages
-  const addBtn = document.querySelector('.add-to-cart-btn');
-  if (addBtn) {
-    addBtn.addEventListener('click', () => {
-      const productNameElem = document.querySelector('.product h3');
+
+  // Handle Add to Cart buttons on product pages
+  const addButtons = document.querySelectorAll('.add-to-cart-btn');
+  addButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const productDiv = button.closest('.product');
+      const productNameElem = productDiv.querySelector('h3');
+      const select = productDiv.querySelector('select');
+
       const productName = productNameElem ? productNameElem.innerText : 'Item';
-      const select = document.querySelector('.product select');
       const variantText = select.options[select.selectedIndex].text;
       const priceMatch = variantText.match(/\$(\d+(?:\.\d+)?)/);
       const price = priceMatch ? parseFloat(priceMatch[1]) : 0;
+
       addToCart(productName, variantText, price);
     });
-  }
+  });
+
   // If on cart page
   if (document.getElementById('cart-table')) {
     renderCart();
   }
 });
+
