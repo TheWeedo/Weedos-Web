@@ -2,17 +2,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flower | Wellness By Weedo</title>
 <style>
-body { margin: 0; font-family: sans-serif; background-color: #1a3d2f; color: #f0f0e5; }
-header { background-color: #2e5939; padding: 2rem; text-align: center; }
-.logo img { height: 80px; filter: drop-shadow(0 0 30px #b5f7c3); }
-nav a { color: #f0f0e5; margin: 0 1rem; text-decoration: none; font-weight: bold; }
-section { padding: 2rem; text-align: center; }
-.product { background-color: #2e5939; border-radius: 12px; padding: 2rem; max-width: 600px; margin: 2rem auto; }
-.product img { width: 100%; border-radius: 10px; max-width: 400px; }
-.product h3 { margin-top: 1rem; }
-select, button { margin-top: 1rem; padding: 0.5rem 1rem; border-radius: 8px; border: none; font-size: 1rem; }
-button { background-color: #b5f7c3; color: #1a3d2f; font-weight: bold; cursor: pointer; }
-footer { background-color: #2e5939; text-align: center; padding: 1rem; font-size: 0.9rem; color: #ccc; }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .product {
+    background-color: #2e5939;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 0;
+    max-width: none;
+  }
+  .product img {
+    width: 322px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
 </style></head><body>
 <header><div class="logo"><img src="weedo-logo.png" alt="Logo"></div>
 <nav>
