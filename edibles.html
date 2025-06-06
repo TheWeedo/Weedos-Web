@@ -34,9 +34,9 @@
     max-width: none; /* override previous */
   }
   .product img {
-    width: 322px;
-    height: 430px;
-    object-fit: cover;
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
     border-radius: 10px;
     margin: 0 auto;
   }
@@ -115,10 +115,10 @@
 <div class="product">
   <img src="cookies.jpeg" alt="Infused Cookies">
   <h3>Infused Cookies</h3>
-  <p>Fresh-baked and full of comfort, our infused cookies come in Oatmeal Chocolate Chip or Peanut Butter. $5 each or $50 per dozen.</p>
+  <p>Fresh-baked and full of comfort, our infused cookies come in Chocolate Chip or Peanut Butter. $5 each or $50 per dozen.</p>
   <select id="cookieVariant" name="cookieVariant">
-    <option value="Oatmeal - 1 cookie">Oatmeal Chocolate Chip - $5</option>
-    <option value="Oatmeal - dozen">Oatmeal Chocolate Chip (Dozen) - $50</option>
+    <option value="Oatmeal - 1 cookie">Chocolate Chip - $5</option>
+    <option value="Oatmeal - dozen">Chocolate Chip (Dozen) - $50</option>
     <option value="Peanut Butter - 1 cookie">Peanut Butter - $5</option>
     <option value="Peanut Butter - dozen">Peanut Butter (Dozen) - $50</option>
   </select>
