@@ -1,46 +1,20 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wellness By Weedo, Organic Cannabis, Mushrooms & Healing in the Ozarks</title><style>
-body { margin: 0; font-family: sans-serif; background-color: #1a3d2f; color: #f0f0e5; }
-header { background-color: #2e5939; padding: 2rem; text-align: center; }
-.logo img { height: 80px; filter: drop-shadow(0 0 30px #b5f7c3); }
-nav a { color: #f0f0e5; margin: 0 1rem; text-decoration: none; font-weight: bold; }
-.hero { background: url('background.png') center/cover fixed no-repeat;
-  text-align: center; padding: 5rem 2rem; box-shadow: inset 0 0 0 2000px rgba(26,61,47,0.6); }
-.hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-.hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem; }
-.hero .buttons a {
-  display: inline-block; margin: 0 1rem; padding: 0.75rem 2rem; background-color: #b5f7c3; color: #1a3d2f; font-weight: bold;
-  text-decoration: none; border-radius: 30px; transition: background-color 0.3s ease; }
-.hero .buttons a:hover { background-color: #a2e5b1; }
-section { padding: 3rem 2rem; text-align: center; }
-footer { background-color: #2e5939; text-align: center; padding: 2rem 1rem; font-size: 0.9rem; color: #ccc; }
-input, textarea { padding: 0.75rem; width: 100%; max-width: 400px; margin: 0.5rem auto; display: block; border-radius: 8px; border: none; }
-button { padding: 0.75rem 2rem; background-color: #b5f7c3; color: #1a3d2f; font-weight: bold; border: none; border-radius: 30px; cursor: pointer; }
+<title>Enter Wellness By Weedo - Ozark-Grown Healing Awaits</title><style>
+body { background-color: #0d1f16; color: #b5f7c3; font-family: sans-serif;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; text-align: center; }
+img.logo { width: 60vw; max-width: 400px; margin-bottom: 2.5rem; filter: drop-shadow(0 0 100px #b5f7c3) drop-shadow(0 0 40px #b5f7c3); }
+.button { color: #0d1f16; background-color: #b5f7c3; border: none; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; margin: 1rem; font-weight: bold; cursor: pointer; }
+#age-gate { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(13, 31, 22, 0.98); color: #b5f7c3; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 9999; padding: 2rem; }
 </style></head><body>
-<header><div class="logo"><img src="weedo-logo.png" alt="Logo"></div>
-<nav>
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
-    </nav></header>
-<section class="hero">
-  <h1>Plant-Powered Wellness</h1>
-  <p>"Craft cannabis and real Ozark-grown healing for mind and body."</p>
-  <div class="buttons">
-    <a href="shop.html">Shop Now</a>
-    <a href="about.html">Learn More</a>
+<div id="age-gate">
+  <img src="weedo-logo.png" alt="Logo" class="logo">
+  <h1>Are you 21 or older?</h1>
+  <div>
+    <button class="button" onclick="location.href='home.html';">Yes, Enter</button>
+    <button class="button" onclick="location.href='https://www.google.com';">No, Leave</button>
   </div>
-</section>
-<section id="testimonials">
-  <h2>What Our Customers Say</h2>
-  <p>"Hands down the best edibles I've ever tried-consistent, effective, and delicious."</p>
-  <p>"You can feel the love in every batch. Their tinctures changed the way I sleep."</p>
-</section>
-
-
-  <script src="cart.js"></script>
+  <p style="font-size: 1rem; margin-top: 1.5rem; max-width: 300px;">By clicking "Enter", you verify that you are 21 years of age or older.</p>
+</div>
 
   
 
@@ -48,7 +22,7 @@ button { padding: 0.75rem 2rem; background-color: #b5f7c3; color: #1a3d2f; font-
 <footer style="margin-top: 4rem; padding: 2rem; background-color: #2e5939; color: white; text-align: center;">
     <p><strong>Wellness By Weedo</strong> - Natural Healing, Elevated Living.</p>
     <nav style="margin: 0.5rem 0;">
-      <a href="index.html" style="color: #b8e8c6;">Home</a> |
+      <a href="home.html" style="color: #b8e8c6;">Home</a> |
       <a href="shop.html" style="color: #b8e8c6;">Shop</a> |
       <a href="about.html" style="color: #b8e8c6;">About</a> |
       <a href="contact.html" style="color: #b8e8c6;">Contact</a>
