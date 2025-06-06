@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apparel | Wellness By Weedo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #1a3d2f;
+      color: #f0f0e5;
+    }
+    header {
+      background-color: #2e5939;
+      padding: 2rem;
+      text-align: center;
+    }
+    .logo img {
+      height: 80px;
+      filter: drop-shadow(0 0 30px #b5f7c3);
+    }
+    nav a {
+      color: #f0f0e5;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .product {
+      background-color: #2e5939;
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      max-width: 400px;
+    }
+    .product h3 {
+      margin-top: 1rem;
+    }
+    select, button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2e5939;
+      color: #f0f0e5;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container, .content, .main, .wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 768px) {
+    nav, .nav, .menu {
+      flex-direction: column !important;
+    }
+
+    .product-grid, .grid, .card-container {
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      gap: 1rem;
+    }
+
+    .button, button {
+      width: 100%;
+      font-size: 1.1rem;
+      padding: 1rem;
+    }
+
+    header, footer {
+      text-align: center;
+    }
+  }
+</style>
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="home.html">
+        <img src="weedo-logo.png" alt="Wellness By Weedo Logo">
+      </a>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <!-- ========================================= -->
+  <!--  NEW "Apparel" SECTION STARTS HERE        -->
+  <!-- ========================================= -->
+  <section>
+    <h2>Wear the Wellness - Custom Shirts &amp; Gear</h2>
+
+    <div class="product">
+      <!-- Replace IMG_0999.jpeg with whichever apparelphoto you want to use -->
+      <img src="IMG_0999.jpeg" alt="Wellness By Weedo Shirt">
+
+      <h3>"Wear the Wellness" T-Shirt</h3>
+      <p>
+        Our signature 100% organic cotton tee, printed with our
+        Wellness By Weedo cannabis leaf design. Created using our leaves from our grows.
+        In stock: <strong>Forest Green</strong> and <strong>Charcoal Black</strong>.
+      </p>
+
+      <label for="shirt-size">Choose Size &amp; Color:</label><br>
+      <select id="shirt-size" name="shirt-size">
+        <option value="sm-green">Small - Forest Green ($25)</option>
+        <option value="med-green">Medium - Forest Green ($25)</option>
+        <option value="lg-green">Large - Forest Green ($25)</option>
+        <option value="sm-black">Small - Charcoal Black ($25)</option>
+        <option value="med-black">Medium - Charcoal Black ($25)</option>
+        <option value="lg-black">Large - Charcoal Black ($25)</option>
+      </select>
+      <br>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+  </section>
+  <!-- ========================================= -->
+  <!--  NEW "Apparel" SECTION ENDS HERE          -->
+  <!-- ========================================= -->
+
+  
+  <script src="cart.js"></script>
+
+  
+
+  
+<footer style="margin-top: 4rem; padding: 2rem; background-color: #2e5939; color: white; text-align: center;">
+    <p><strong>Wellness By Weedo</strong> - Natural Healing, Elevated Living.</p>
+    <nav style="margin: 0.5rem 0;">
+      <a href="home.html" style="color: #b8e8c6;">Home</a> |
+      <a href="shop.html" style="color: #b8e8c6;">Shop</a> |
+      <a href="about.html" style="color: #b8e8c6;">About</a> |
+      <a href="contact.html" style="color: #b8e8c6;">Contact</a>
+    </nav>
+    <p style="margin: 0.5rem 0;">&copy; 2025 Wellness By Weedo. All rights reserved.</p>
+    <p>Email: <a href="mailto:info@wellnessbyweedo.com" style="color: #b8e8c6;">info@wellnessbyweedo.com</a></p>
+  </footer></body>
+</html>
+
+
