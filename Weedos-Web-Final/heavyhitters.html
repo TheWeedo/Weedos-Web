@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Edibles | Wellness By Weedo
+  </title>
+  <style>
+   body { margin: 0; font-family: sans-serif; background-color: #1a3d2f; color: #f0f0e5; }
+    header { background-color: #2e5939; padding: 2rem; text-align: center; }
+    .logo img { height: 80px; filter: drop-shadow(0 0 30px #b5f7c3); }
+    nav a { color: #f0f0e5; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    section { padding: 2rem; text-align: center; }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .product {
+      background-color: #2e5939;
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+      margin: 0;
+    }
+    .product img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 0 auto;
+      display: block;
+    }
+    select, button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #b5f7c3;
+      color: #1a3d2f;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #2e5939;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+ </head>
+ <body>
+  <header>
+   <div class="logo">
+    <img alt="Logo" src="weedo-logo.png"/>
+   </div>
+   <nav>
+    <a href="home.html">
+     Home
+    </a>
+    <a href="shop.html">
+     Shop
+    </a>
+    <a href="about.html">
+     About
+    </a>
+    <a href="contact.html">
+     Contact
+    </a>
+    <a href="blog.html">
+     Blog
+    </a>
+    <a href="cart.html">
+     Cart (
+     <span id="cart-count">
+      0
+     </span>
+     )
+    </a>
+   </nav>
+  </header>
+  <section>
+   <h1>
+    Next-Level Relief
+   </h1>
+   <div class="products">
+    <div class="product">
+     <img alt="High Dose Gummy Worms" src="HH-rosin-worm.jpeg"/>
+     <h3>
+      High Dose Rosin Gummy Worms (50mg)
+     </h3>
+     <p>
+      Our strongest gummy yet &mdash; these full-spectrum rosin worms deliver powerful relief and deep relaxation in one delicious bite.
+     </p>
+     <select id="hhwormVariant" name="hhwormVariant">
+      <option value="10mg">
+       10mg - $3
+      </option>
+      <option value="20mg">
+       20mg - $5
+      </option>
+      <option value="40mg">
+       40mg - $7
+      </option>
+      <option value="50mg">
+       50mg - $8
+      </option>
+     </select>
+<br/>
+<label>Quantity:</label>
+<input type="number" min="1" value="1" style="width: 80px; padding: 0.4rem; border-radius: 6px; border: none; font-size: 1rem;">
+
+     <br/>
+     <button class="add-to-cart-btn">
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <img alt="Pressed Wax" src="edibles-hh-wax.jpeg"/>
+     <h3>
+      Premium Pressed Wax
+     </h3>
+     <p>
+      Fresh-pressed from our finest top-shelf bud. Ultra-clean full-spectrum wax for powerful, fast-acting results.
+     </p>
+     <select id="waxVariant" name="waxVariant">
+      <option value="indica">
+       1g Indica - $60
+      </option>
+      <option value="sativa">
+       1g Sativa - $60
+      </option>
+     </select>
+<br/>
+<label>Quantity:</label>
+<input type="number" min="1" value="1" style="width: 80px; padding: 0.4rem; border-radius: 6px; border: none; font-size: 1rem;">
+
+     <br/>
+     <button class="add-to-cart-btn">
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <img alt="1g Preroll" src="HH-preroll.jpeg"/>
+     <h3>
+      1 Gram Preroll
+     </h3>
+     <p>
+      Rolled from our strongest premium flower. Available in Indica or Sativa.
+      <br/>
+      <em>
+       Also explore full flower options
+       <a href="flower.html" style="color:#b8e8c6;">
+        here
+       </a>
+       .
+      </em>
+     </p>
+     <select id="prerollVariant" name="prerollVariant">
+      <option value="indica-single">
+       Indica - $10
+      </option>
+      <option value="sativa-single">
+       Sativa - $10
+      </option>
+      <option value="indica-6pk">
+       Indica - 6 for $50
+      </option>
+      <option value="sativa-6pk">
+       Sativa - 6 for $50
+      </option>
+     </select>
+<br/>
+<label>Quantity:</label>
+<input type="number" min="1" value="1" style="width: 80px; padding: 0.4rem; border-radius: 6px; border: none; font-size: 1rem;">
+
+     <br/>
+     <button class="add-to-cart-btn">
+      Add to Cart
+     </button>
+    </div>
+   </div>
+  </section>
+  <script src="cart.js">
+  </script>
+  <footer style="margin-top: 4rem; padding: 2rem; background-color: #2e5939; color: white; text-align: center;">
+   <p>
+    <strong>
+     Wellness By Weedo
+    </strong>
+    - Natural Healing, Elevated Living.
+   </p>
+   <nav style="margin: 0.5rem 0;">
+    <a href="home.html" style="color: #b8e8c6;">
+     Home
+    </a>
+    |
+    <a href="shop.html" style="color: #b8e8c6;">
+     Shop
+    </a>
+    |
+    <a href="about.html" style="color: #b8e8c6;">
+     About
+    </a>
+    |
+    <a href="contact.html" style="color: #b8e8c6;">
+     Contact
+    </a>
+    <a href="blog.html" style="color: #b8e8c6;">
+     Blog
+    </a>
+    |
+   </nav>
+   <p style="margin: 0.5rem 0;">
+    &copy; 2025 Wellness By Weedo. All rights reserved.
+   </p>
+   <p>
+    Email:
+    <a href="mailto:info@wellnessbyweedo.com" style="color: #b8e8c6;">
+     info@wellnessbyweedo.com
+    </a>
+   </p>
+  </footer>
+ </body>
+</html>
