@@ -17,17 +17,17 @@ function updateCartCount() {
   });
 }
 
-function addToCart(productName, variant, price) {
+function addToCart(productName, variant, price, quantity = 1) {
   const cart = getCart();
   const existing = cart.find(item => item.name === productName && item.variant === variant);
   if (existing) {
-    existing.quantity += 1;
+    existing.quantity += quantity;
   } else {
-    cart.push({ name: productName, variant: variant, price: price, quantity: 1 });
+    cart.push({ name: productName, variant: variant, price: price, quantity: quantity });
   }
   saveCart(cart);
   updateCartCount();
-  alert(`${productName} / ${variant} added to cart.`);
+  alert(`${quantity} × ${productName} / ${variant} added to cart.`);
 }
 
 function renderCart() {
@@ -35,28 +35,24 @@ function renderCart() {
   const tbody = document.querySelector('#cart-table tbody');
   tbody.innerHTML = '';
   let total = 0;
+
   cart.forEach((item, index) => {
-    const subtotal = item.price * item.quantity;
-    total += subtotal;
     const row = document.createElement('tr');
+    const itemTotal = item.price * item.quantity;
+    total += itemTotal;
+
     row.innerHTML = `
       <td>${item.name}</td>
       <td>${item.variant}</td>
-      <td>$${item.price.toFixed(2)}</td>
       <td>${item.quantity}</td>
-      <td>$${subtotal.toFixed(2)}</td>
-      <td><button data-index="${index}" class="remove-btn">X</button></td>
+      <td>$${item.price.toFixed(2)}</td>
+      <td>$${itemTotal.toFixed(2)}</td>
+      <td><button onclick="removeFromCart(${index})">Remove</button></td>
     `;
     tbody.appendChild(row);
   });
+
   document.getElementById('cart-total').textContent = `$${total.toFixed(2)}`;
-  document.querySelectorAll('.remove-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const idx = parseInt(btn.getAttribute('data-index'));
-      removeFromCart(idx);
-    });
-  });
-  updateCartCount();
 }
 
 function removeFromCart(index) {
@@ -64,31 +60,24 @@ function removeFromCart(index) {
   cart.splice(index, 1);
   saveCart(cart);
   renderCart();
+  updateCartCount();
 }
 
+// Hook into buttons
 document.addEventListener('DOMContentLoaded', () => {
   updateCartCount();
 
-  // Handle Add to Cart buttons on product pages
-  const addButtons = document.querySelectorAll('.add-to-cart-btn');
-  addButtons.forEach(button => {
+  document.querySelectorAll('.add-to-cart-btn').forEach(button => {
     button.addEventListener('click', () => {
-      const productDiv = button.closest('.product');
-      const productNameElem = productDiv.querySelector('h3');
-      const select = productDiv.querySelector('select');
+      const product = button.closest('.product');
+      const productName = product.querySelector('h3').textContent;
+      const variantSelect = product.querySelector('select');
+      const variant = variantSelect ? variantSelect.value : 'Standard';
+      const price = parseFloat(variantSelect.options[variantSelect.selectedIndex].textContent.match(/\$([\d.]+)/)[1]);
+      const qtyInput = product.querySelector('input[type="number"]');
+      const quantity = qtyInput ? parseInt(qtyInput.value) || 1 : 1;
 
-      const productName = productNameElem ? productNameElem.innerText : 'Item';
-      const variantText = select.options[select.selectedIndex].text;
-      const priceMatch = variantText.match(/\$(\d+(?:\.\d+)?)/);
-      const price = priceMatch ? parseFloat(priceMatch[1]) : 0;
-
-      addToCart(productName, variantText, price);
+      addToCart(productName, variant, price, quantity);
     });
   });
-
-  // If on cart page
-  if (document.getElementById('cart-table')) {
-    renderCart();
-  }
 });
-

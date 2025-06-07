@@ -26,12 +26,15 @@
       margin: 0 auto;
     }
     .product h3 { margin-top: 1rem; }
-    select, button {
+    select, input[type=number], button {
       margin-top: 1rem;
       padding: 0.5rem 1rem;
       border-radius: 8px;
       border: none;
       font-size: 1rem;
+    }
+    input[type=number] {
+      width: 80px;
     }
     button {
       background-color: #b5f7c3;
@@ -66,8 +69,8 @@
 
 <section>
   <h1>Our Potions and Lotions</h1>
-
   <div class="products">
+
     <div class="product">
       <img src="Topical- bathBomb.jpeg" alt="Infused Bath Bomb">
       <h3>Infused Bath Bomb</h3>
@@ -76,6 +79,9 @@
         <option value="small">Small - $5</option>
         <option value="large">Large - $8</option>
       </select>
+      <br>
+      <label for="bathbombVariant-qty">Quantity:</label>
+      <input type="number" id="bathbombVariant-qty" name="bathbombVariant-qty" min="1" value="1">
       <br>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
@@ -88,10 +94,12 @@
         <option value="standard">Standard - $40</option>
       </select>
       <br>
+      <label for="salveVariant-qty">Quantity:</label>
+      <input type="number" id="salveVariant-qty" name="salveVariant-qty" min="1" value="1">
+      <br>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
 
-    
     <div class="product">
       <img src="Topical-lipbalm.jpeg" alt="Infused Lip Balm">
       <h3>Infused Lip Balm</h3>
@@ -99,6 +107,9 @@
       <select id="lipbalmVariant" name="lipbalmVariant">
         <option value="standard">Standard - $4</option>
       </select>
+      <br>
+      <label for="lipbalmVariant-qty">Quantity:</label>
+      <input type="number" id="lipbalmVariant-qty" name="lipbalmVariant-qty" min="1" value="1">
       <br>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
