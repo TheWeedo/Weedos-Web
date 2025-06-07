@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html>
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
    Edibles | Wellness By Weedo
   </title>
-  <style>
+<style>
    body { margin: 0; font-family: sans-serif; background-color: #1a3d2f; color: #f0f0e5; }
   header { background-color: #2e5939; padding: 2rem; text-align: center; }
   .logo img { height: 80px; filter: drop-shadow(0 0 30px #b5f7c3); }
@@ -44,7 +45,7 @@
     display: block;
   }
   </style>
-  <style>
+<style>
    body {
     margin: 0;
     padding: 0;
@@ -85,177 +86,173 @@
     }
   }
   </style>
- </head>
- <body>
-  <header>
-   <div class="logo">
-    <img alt="Logo" src="weedo-logo.png"/>
-   </div>
-   <nav>
-    <a href="home.html">
+</head>
+<body>
+<header>
+<div class="logo">
+<img alt="Logo" src="weedo-logo.png"/>
+</div>
+<nav>
+<a href="home.html">
      Home
     </a>
-    <a href="shop.html">
+<a href="shop.html">
      Shop
     </a>
-    <a href="about.html">
+<a href="about.html">
      About
     </a>
-    <a href="contact.html">
+<a href="contact.html">
      Contact
     </a>
-    <a href="blog.html">
+<a href="blog.html">
      Blog
     </a>
-    <a href="cart.html">
+<a href="cart.html">
      Cart (
      <span id="cart-count">
       0
      </span>
      )
     </a>
-   </nav>
-  </header>
-  <section>
-   <h1>
+</nav>
+</header>
+<section>
+<h1>
     Our Edibles
    </h1>
-   <div class="products">
-    <div class="product">
-     <img alt="Chocolate Bars" src="chocolate-bars.jpeg"/>
-     <h3>
+<div class="products">
+<div class="product">
+<img alt="Chocolate Bars" src="chocolate-bars.jpeg"/>
+<h3>
       Chocolate Bars
      </h3>
-     <p>
-      <p>
+<p>
+<p>
        🔥 Mulitple Choices Available 🔥
       </p>
-     </p>
-     <select id="choc-variant" name="choc-variant">
-      <option value="milk">
+</p>
+
+<br/>
+
+
+<br/>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem; margin-top: 1rem;"><select id="choc-variant" name="choc-variant">
+<option value="milk">
        Milk Chocolate - $25
       </option>
-      <option value="dark">
+<option value="dark">
        Dark Chocolate - $25
       </option>
-     </select>
-<br/>
-<label>Quantity:</label>
-<input type="number" min="1" value="1" style="width: 80px; padding: 0.4rem; border-radius: 6px; border: none; font-size: 1rem;">
-
-     <br/>
-     <button class="add-to-cart-btn">
+</select><div style="display: flex; align-items: center; gap: 0.5rem;"><label>Quantity:</label><input min="1" style="width: 80px; padding: 0.4rem; border-radius: 6px; border: none; font-size: 1rem;" type="number" value="1"/></div></div><button class="add-to-cart-btn">
       Add to Cart
      </button>
-    </div>
-    <div class="product">
-     <img alt="Infused Cookies" src="cookies.jpeg"/>
-     <h3>
+</div>
+<div class="product">
+<img alt="Infused Cookies" src="cookies.jpeg"/>
+<h3>
       Infused Cookies
      </h3>
-     <p>
+<p>
       Fresh-baked and full of comfort, our infused cookies come in Chocolate Chip or Peanut Butter. $5 each or $50 per dozen.
      </p>
-     <select id="cookieVariant" name="cookieVariant">
-      <option value="Oatmeal - 1 cookie">
+
+<br/>
+
+
+<br/>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem; margin-top: 1rem;"><select id="cookieVariant" name="cookieVariant">
+<option value="Oatmeal - 1 cookie">
        Chocolate Chip - $5
       </option>
-      <option value="Oatmeal - dozen">
+<option value="Oatmeal - dozen">
        Chocolate Chip (Dozen) - $50
       </option>
-      <option value="Peanut Butter - 1 cookie">
+<option value="Peanut Butter - 1 cookie">
        Peanut Butter - $5
       </option>
-      <option value="Peanut Butter - dozen">
+<option value="Peanut Butter - dozen">
        Peanut Butter (Dozen) - $50
       </option>
-     </select>
-<br/>
-<label>Quantity:</label>
-<input type="number" min="1" value="1" style="width: 80px; padding: 0.4rem; border-radius: 6px; border: none; font-size: 1rem;">
-
-     <br/>
-     <button class="add-to-cart-btn">
+</select><div style="display: flex; align-items: center; gap: 0.5rem;"><label>Quantity:</label><input min="1" style="width: 80px; padding: 0.4rem; border-radius: 6px; border: none; font-size: 1rem;" type="number" value="1"/></div></div><button class="add-to-cart-btn">
       Add to Cart
      </button>
-    </div>
-    <div class="product">
-     <img alt="Cannabis Brownies" src="edibles_brownies.jpeg"/>
-     <h3>
+</div>
+<div class="product">
+<img alt="Cannabis Brownies" src="edibles_brownies.jpeg"/>
+<h3>
       Infused Brownies
      </h3>
-     <p>
+<p>
       Rich, gooey chocolate brownies infused with our signature canna-butter. Made in 8x8 trays, ready to portion and enjoy.
      </p>
-     <select id="brownieVariant" name="brownieVariant">
-      <option value="50mg">
-       $25 &ndash; 50mg Tray
-      </option>
-      <option value="100mg">
-       $40 &ndash; 100mg Tray
-      </option>
-     </select>
-<br/>
-<label>Quantity:</label>
-<input type="number" min="1" value="1" style="width: 80px; padding: 0.4rem; border-radius: 6px; border: none; font-size: 1rem;">
 
-     <br/>
-     <button class="add-to-cart-btn">
+<br/>
+
+
+<br/>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem; margin-top: 1rem;"><select id="brownieVariant" name="brownieVariant">
+<option value="50mg">
+       $25 – 50mg Tray
+      </option>
+<option value="100mg">
+       $40 – 100mg Tray
+      </option>
+</select><div style="display: flex; align-items: center; gap: 0.5rem;"><label>Quantity:</label><input min="1" style="width: 80px; padding: 0.4rem; border-radius: 6px; border: none; font-size: 1rem;" type="number" value="1"/></div></div><button class="add-to-cart-btn">
       Add to Cart
      </button>
-    </div>
-    <div class="product">
-     <img alt="Gummy Squares" src="leaf-gummies.jpeg"/>
-     <h3>
+</div>
+<div class="product">
+<img alt="Gummy Squares" src="leaf-gummies.jpeg"/>
+<h3>
       Gummy Squares (2.5mg)
      </h3>
-     <p>
+<p>
       Available in both daytime and nighttime options
      </p>
-     <div style="display: flex; flex-direction: column; align-items: center;">
-      <select id="gummyVariant" name="gummyVariant">
-       <option data-price="20" value="Daytime - Bag of 20">
+<div style="display: flex; flex-direction: column; align-items: center;">
+
+<br/>
+
+
+<br/>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem; margin-top: 1rem;"><select id="gummyVariant" name="gummyVariant">
+<option data-price="20" value="Daytime - Bag of 20">
         Daytime - Bag of 20 ($20)
        </option>
-       <option data-price="20" value="Nighttime - Bag of 20">
+<option data-price="20" value="Nighttime - Bag of 20">
         Nighttime - Bag of 20 ($20)
        </option>
-       <option data-price="50" value="Daytime - Bag of 50">
+<option data-price="50" value="Daytime - Bag of 50">
         Daytime - Bag of 50 ($50)
        </option>
-       <option data-price="50" value="Nighttime - Bag of 50">
+<option data-price="50" value="Nighttime - Bag of 50">
         Nighttime - Bag of 50 ($50)
        </option>
-       <option data-price="100" value="Daytime - Bag of 100">
+<option data-price="100" value="Daytime - Bag of 100">
         Daytime - Bag of 100 ($100)
        </option>
-       <option data-price="100" value="Nighttime - Bag of 100">
+<option data-price="100" value="Nighttime - Bag of 100">
         Nighttime - Bag of 100 ($100)
        </option>
-      </select>
-<br/>
-<label>Quantity:</label>
-<input type="number" min="1" value="1" style="width: 80px; padding: 0.4rem; border-radius: 6px; border: none; font-size: 1rem;">
-
-      <br/>
-      <button class="add-to-cart-btn">
+</select><div style="display: flex; align-items: center; gap: 0.5rem;"><label>Quantity:</label><input min="1" style="width: 80px; padding: 0.4rem; border-radius: 6px; border: none; font-size: 1rem;" type="number" value="1"/></div></div><button class="add-to-cart-btn">
        Add to Cart
       </button>
-     </div>
-    </div>
-   </div>
-  </section>
-  <script src="cart.js">
-  </script>
-  <footer style="margin-top: 4rem; padding: 2rem; background-color: #2e5939; color: white; text-align: center;">
-   <p>
-    <strong>
+</div>
+</div>
+</div>
+</section>
+<script src="cart.js">
+</script>
+<footer style="margin-top: 4rem; padding: 2rem; background-color: #2e5939; color: white; text-align: center;">
+<p>
+<strong>
      Wellness By Weedo
     </strong>
     - Natural Healing, Elevated Living.
    </p>
-   <nav style="margin: 0.5rem 0;">
-    <a href="home.html" style="color: #b8e8c6;">
+<nav style="margin: 0.5rem 0;">
+<a href="home.html" style="color: #b8e8c6;">
      Home
     </a>
     |
@@ -270,20 +267,20 @@
     <a href="contact.html" style="color: #b8e8c6;">
      Contact
     </a>
-    <a href="blog.html" style="color: #b8e8c6;">
+<a href="blog.html" style="color: #b8e8c6;">
      Blog
     </a>
     |
    </nav>
-   <p style="margin: 0.5rem 0;">
-    &copy; 2025 Wellness By Weedo. All rights reserved.
+<p style="margin: 0.5rem 0;">
+    © 2025 Wellness By Weedo. All rights reserved.
    </p>
-   <p>
+<p>
     Email:
     <a href="mailto:info@wellnessbyweedo.com" style="color: #b8e8c6;">
      info@wellnessbyweedo.com
     </a>
-   </p>
-  </footer>
- </body>
+</p>
+</footer>
+</body>
 </html>
