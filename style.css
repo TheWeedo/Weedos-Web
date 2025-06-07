@@ -99,3 +99,46 @@ footer {
   margin: 0 auto;
   display: block;
 }
+
+/* === Normalized Quantity Input === */
+input[type="number"] {
+  width: 80px;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* === Dropdown Styling for Consistency === */
+select {
+  width: 90%;
+  max-width: 250px;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fff;
+  margin: 0.5rem 0;
+}
+
+/* === Responsive Product Layout for Mobile === */
+@media (max-width: 600px) {
+  .product {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .product select,
+  .product input[type="number"],
+  .product button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
